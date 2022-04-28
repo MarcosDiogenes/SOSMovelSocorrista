@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Andamento">
+
+    <TextView
+        android:id="@+id/Andamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Andamento"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAndRegulacao"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/regulacao_apagado" />
+
+    <ImageButton
+        android:id="@+id/btnAndSinaisVitais"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAndRegulacao"
+        app:layout_constraintStart_toEndOf="@+id/btnAndRegulacao"
+        app:srcCompat="@drawable/sinais_vitais_apagado" />
+
+    <ImageButton
+        android:id="@+id/btnAndAndamento"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAndRegulacao"
+        app:layout_constraintStart_toEndOf="@+id/btnAndSinaisVitais"
+        app:srcCompat="@drawable/andamento_selecionado" />
+
+    <ImageButton
+        android:id="@+id/btnAndEquipe"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAndRegulacao"
+        app:layout_constraintStart_toEndOf="@+id/btnAndAndamento"
+        app:srcCompat="@drawable/equipe_apagado" />
+
+    <ImageButton
+        android:id="@+id/btnAndMapa"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAndRegulacao"
+        app:layout_constraintStart_toEndOf="@+id/btnAndEquipe"
+        app:srcCompat="@drawable/mapa_apagado" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Equipe">
+
+    <ImageButton
+        android:id="@+id/btnEqRegulacao"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/regulacao_apagado" />
+
+    <ImageButton
+        android:id="@+id/btnEqSinaisVitais"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEqRegulacao"
+        app:layout_constraintStart_toEndOf="@+id/btnEqRegulacao"
+        app:srcCompat="@drawable/sinais_vitais_apagado" />
+
+    <ImageButton
+        android:id="@+id/btnEqAndamento"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEqSinaisVitais"
+        app:layout_constraintStart_toEndOf="@+id/btnEqSinaisVitais"
+        app:srcCompat="@drawable/andamento_apagado" />
+
+    <ImageButton
+        android:id="@+id/btnEqEquipe"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEqAndamento"
+        app:layout_constraintStart_toEndOf="@+id/btnEqAndamento"
+        app:srcCompat="@drawable/equipe_selecionado" />
+
+    <ImageButton
+        android:id="@+id/btnEqMapa"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEqEquipe"
+        app:layout_constraintStart_toEndOf="@+id/btnEqEquipe"
+        app:srcCompat="@drawable/mapa_apagado" />
+
+</android.support.constraint.ConstraintLayout>
